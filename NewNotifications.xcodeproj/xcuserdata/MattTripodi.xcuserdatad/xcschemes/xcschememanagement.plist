@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MyContentExtention.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>NewNotifications.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>EEB76A941F12DC950093FE3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEB76AAB1F130A4E0093FE3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
