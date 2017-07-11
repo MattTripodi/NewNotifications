@@ -21,18 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-aY-ppD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-aY-ppD">
                                 <rect key="frame" x="8" y="8" width="304" height="304"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="HIb-Gx-7z0"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="qpl-K3-84y"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qu-Nf-tBR">
+                                <rect key="frame" x="212" y="200.5" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8qu-Nf-tBR" secondAttribute="trailing" id="0Ol-By-OuM"/>
                             <constraint firstItem="aR9-aY-ppD" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="Bpe-gY-xNh"/>
                             <constraint firstItem="aR9-aY-ppD" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="H6M-PJ-539"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="8qu-Nf-tBR" secondAttribute="bottom" id="TAT-MP-0Cp"/>
                             <constraint firstAttribute="trailing" secondItem="aR9-aY-ppD" secondAttribute="trailing" constant="8" id="bJ9-QZ-a3d"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="aR9-aY-ppD" secondAttribute="bottom" constant="8" id="q1P-Bw-VS6"/>
                         </constraints>
@@ -43,6 +51,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="320"/>
+                    <connections>
+                        <outlet property="imageView" destination="aR9-aY-ppD" id="RmE-tq-ACy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
